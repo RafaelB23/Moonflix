@@ -1,5 +1,34 @@
-<h1 class="text-center text-3xl font-bold text-blue-500">
-  Hola mundo!<br />
-</h1>
-
+<div class="min-h-screen flex flex-col">
+  <header class="sticky top-0 z-50">
+    <app-main-nav-bar></app-main-nav-bar>
+  </header>
+<div class="flex-1">
+  <app-main-layout class="h-full"/>
+</div>  
+  <footer class="bg-gray-800 text-white p-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Moonflix</h3>
+        <p class="text-gray-400">Tu plataforma de streaming favorita</p>
+      </div>
+      <div>
+        <h4 class="font-medium mb-4">Enlaces</h4>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-400 hover:text-white">Términos</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-medium mb-4">Redes</h4>
+        <div class="flex space-x-4">
+          <a href="#"><i class="fab fa-twitter text-gray-400 hover:text-white"></i></a>
+          <a href="#"><i class="fab fa-instagram text-gray-400 hover:text-white"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400">
+      <p>© 2023 Moonflix. Todos los derechos reservados.</p>
+    </div>
+  </footer>  
+</div>
 <router-outlet />

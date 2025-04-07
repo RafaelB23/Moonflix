@@ -1,0 +1,5 @@
+@if(isSearchActive){
+    <input #searchInput type="text" placeholder="Buscar..." class="px-2 py-1 rounded-full border border-gray-300 bg-white text-gray-400 shadow-lg transform transition-all duration-500 ease-out w-0 opacity-0 focus:w-64 focus:opacity-100 focus:scale-100" (keyup.enter)="onSearch()" (blur)="blurHandler()"/>
+}@else{
+    <button (click)="toggleSearch()" class="cursor-pointer transition-all duration-300 hover:text-gray-400">Buscar</button>
+}
